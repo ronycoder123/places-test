@@ -88,7 +88,7 @@
         }
         .place{
             width:300px;
-            height:100%;
+            height:300px;
             border:1px solid white;
             animation-duration: 1s;
             object-fit:cover;
@@ -159,6 +159,7 @@
     document.getElementById('madikeri').onclick=function(){
         space++;
         if(space%2 !=0){
+            document.getElementById('madikeri').style.height="100%";
             document.getElementById('cont').style.animationName="in";
             document.getElementById('cont').style.width='100%'
             document.getElementById('madikeri').style.animationName='border';
@@ -174,7 +175,7 @@
 
             }
             else{
-
+                document.getElementById('madikeri').style.height="100%"
                 document.getElementById('text').textContent=""
                 document.getElementById('cont').style.animationName='out'
                 document.getElementById('cont').style.width='0%';
